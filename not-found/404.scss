@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    background-color: transparent;
+    background-image: linear-gradient(0deg, #0093e9 0%, #21c08b 100%);
+    width: 100%;
+    height: 100vh;
+    font-family: "Mulish", sans-serif;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.header__img {
+    width: 200px;
+    margin: 10px;
+}
+
+.header__menu {
+    color: #eee;
+    margin-top: 10px;
+}
+
+.header__menu-profile {
+    display: flex;
+    cursor: pointer;
+    outline-style: none;
+    padding: 0 30px;
+}
+
+.header__menu-profile::-webkit-details-marker {
+    display: none;
+}
+
+.header__menu-profile img {
+    margin-right: 5px;
+}
+
+.header__menu ul {
+    list-style: none;
+    padding: 0 30px 1px 0;
+    text-align: right;
+}
+
+.header__menu li {
+    margin: 10px 0;
+}
+
+.header__menu li a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.header__menu li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    font-family: "Mulish", sans-serif;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+main h2 {
+    font-size: 150px;
+    line-height: 160px;
+    margin: 130px 0 0 0;
+}
+
+main p {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.animated {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 400) {
+    body {
+        height: auto;
+    }
+}
